@@ -24,6 +24,8 @@ const Mom = {
     age: 36,
     gender: "female"
 }
+const familyMembers = [Mom, Dad]
+console.log(familyMembers)
 
 
 // Dot Notation
@@ -37,8 +39,7 @@ const wardrobe = {
     width: 50
 }
 
-console.log(`kjdkha ${wardrobe.height}`)
-console.log(`lhhsghglhlg ${wardrobe.contents}`)
+console.log(`The wardrobe Height is ${wardrobe.height}.`, `The wardrobe Manufacturer was ${wardrobe.manufacturer}.`, `The wardrobe contains ${wardrobe.contents}.`, `The wardrobe Dimensions are ${wardrobe.depth}`, `x ${wardrobe.width}.`)
 
 
 // Square Bracket Notation
@@ -58,8 +59,16 @@ const empireStateBuilding = {
     northSouthLength: 187,
     architect: "Shreve, Lamb & Harmon"
 }
-console.log(`dimensions ${empireStateBuilding.stories}, ${empireStateBuilding.height}, ${empireStateBuilding.squareFeet}`)
-console.log()
+console.log(`The dimensions of The Empire State Building are as follows: It has ${empireStateBuilding.stories} stories,` ,`It is ${empireStateBuilding.height} tall,`, `has ${empireStateBuilding.squareFeet} sqr ft,`, `${empireStateBuilding.eastWestLength} feet to the W and E,`, `${empireStateBuilding.northSouthLength} to the N and S.`)
+
+const empireStateBuildingRemaining5 = {
+    address: "350 Fifth Avenue, Manhattan, New York 10118",
+    constructionDate: 1931,
+    cost: 40948900,
+    owner: "Empire State Realty Trust",
+    architect: "Shreve, Lamb & Harmon"
+}
+console.log(empireStateBuildingRemaining5[constructionDate], empireStateBuildingRemaining5[cost], empireStateBuildingRemaining5[owner], empireStateBuildingRemaining5[architect])
 
 
 
